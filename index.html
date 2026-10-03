@@ -48,20 +48,22 @@
     .logo {
       display: flex;
       align-items: center;
-      gap: 0.7rem;
+      gap: 0.75rem;
       font-weight: 700;
-      letter-spacing: 0.1em;
-      font-size: 1.25rem;
+      letter-spacing: 0.12em;
+      font-size: 1.3rem;
     }
     .logo-mark {
-      width: 38px; height: 38px;
-      background: var(--orange);
-      color: var(--navy);
-      display: grid;
-      place-items: center;
-      font-weight: 800;
-      font-size: 1.25rem;
-      border-radius: 5px;
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .logo-mark svg {
+      width: 42px;
+      height: 42px;
     }
     nav {
       display: flex;
@@ -283,7 +285,13 @@
 
   <header>
     <a href="#top" class="logo">
-      <span class="logo-mark">A</span>
+      <span class="logo-mark" aria-label="AVIATION logo">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="48" height="48" rx="8" fill="#e85d04"/>
+          <path d="M24 10 L38 34 H30 L24 24 L18 34 H10 L24 10Z" fill="#0b1220"/>
+          <path d="M14 28 H34" stroke="#0b1220" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </span>
       AVIATION
     </a>
     <nav>
